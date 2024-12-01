@@ -1,0 +1,83 @@
+/* src/styles/HeroSection.css */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: #f9f9f9;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+    font-weight: 500;
+  }
+
+  .hero-content h1{
+    font-size: 35px;
+  }
+  
+  .highlight {
+    color: #008cdd;
+    
+  }
+  
+  .appointment-btn {
+    background: linear-gradient(to right, #00aaff, #a6c8ff);
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    .btn-primary:hover {
+      background: linear-gradient(to right, #0099cc, #b3d8ff);
+  }
+}
+  
+  .hero-image {
+    max-width: 40%;
+  }
+  
+  .h-img1{
+    width: auto;
+    height: 430px;
+  }
+
+  .hero-sub-text1{
+    font-size: 14px;
+    color: #B0B0B0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .h-img2{
+    width: auto;
+    height: 30px;
+  }
+
+  @media screen and (max-width: 1242px) {
+    .h-img1{
+      height: 350px;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    .h-img1{
+      height: 300px;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    .hero{
+      display: grid;
+      grid-template-columns: 100%;
+      justify-content: center;
+      justify-items: center;
+    }
+  }
+
+  @media screen and (max-width: 547px) {
+    .h-img1{
+      height: 200px;
+    }
+  }

@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Styles for the form section */
+.form-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap; /* Ensures elements wrap on smaller screens */
+  justify-content: space-between; /* Distributes input boxes evenly */
+  gap: 10px; /* Adds spacing between inputs */
+  width: 100%; /* Ensure it spans the full width of the container */
+  margin: 20px 0; /* Adds vertical spacing */
 }
 
-.App-link {
-  color: #61dafb;
+.input-field {
+  flex: 1; /* Makes input boxes take equal space */
+  min-width: 150px; /* Ensures inputs don't get too small */
+  max-width: 48%; /* Adjusts input size for larger screens */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.input-field:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .input-field {
+    max-width: 100%; /* Makes inputs full-width on smaller screens */
   }
 }

@@ -1,0 +1,117 @@
+/* General Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; 
+  }
+  
+  .logo-img1{
+    width: auto;
+    height: 30px;
+    margin-right: 6px;
+  }
+
+  .navbar-brand a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff; /* Blue color for the logo */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Center the menu items */
+    flex-grow: 1; /* Allow menu items to take available space */
+  }
+  
+  .menu li {
+    margin-left: 20px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #333; /* Dark color for the links */
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .menu a:hover {
+    color: #007bff; /* Blue hover effect */
+  }
+  
+  /* Join Us Button */
+  .btn-primary {
+    padding: 5px 15px;
+    background: linear-gradient(to right, #00aaff, #a6c8ff); /* Sky blue to light blue gradient */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    position: absolute; 
+    right: 20px;
+    top: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(to right, #0099cc, #b3d8ff); /* Darker gradient on hover */
+  }
+
+  .btn-primary1:hover {
+    background: linear-gradient(to right, #0099cc, #b3d8ff); /* Darker gradient on hover */
+  }
+
+  
+  
+  /* Hamburger Menu (Hidden by Default) */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #333; /* Dark color for hamburger lines */
+    margin: 4px 0;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      padding: 10px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for dropdown */
+    }
+  
+    .menu-open {
+      display: flex;
+    }
+  
+    .menu li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  
